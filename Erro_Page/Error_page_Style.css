@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav{
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+.error_page img{
+    height:500px;
+    width: 550px;
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.error_page{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:100vh;
+    width:100%;
+    margin-inline: auto;
+}
+.error_no{
+    text-align: center;
+    margin-inline: auto;
+}
+
+.error_page p{
+    color:black;
+    margin-top:2px;
+    margin-inline:auto;
+    font-size:large;
+    font-weight: bold;
+    padding:1rem;
+}
+
+iframe{
+    height:25rem;
+    width:auto;
+    margin-top:0; 
+    margin-bottom:0; 
+    overflow: hidden; 
+}

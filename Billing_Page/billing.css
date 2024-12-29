@@ -1,0 +1,259 @@
+.check-out-page{
+    display: flex;
+}
+.acc-add-pay{
+    margin-top:8rem;
+    padding:1rem;
+}
+.account , .delivery_addres , .payment{
+    border:2px solid black;
+    padding:3rem;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    margin-top: 1rem;
+    display: flex;
+}
+.account p , .delivery_addres p , .payment p{
+    font-weight: bold;
+    font-size: large;
+}
+.account-img{
+    display:inline-block;
+    flex-direction: row;
+}
+.account-img img{
+    height: 100px;
+    width:auto
+}
+.check-out-page{
+    display: flex;
+}
+.orders-detail-main{
+    margin-top:8rem;
+    padding:1rem;
+    background-color: #fff;
+    margin-left:auto;
+}
+.order-img img{
+    height:100px;
+    width: auto;
+    border-radius:50%;
+}
+.order-summary{
+    display: flex;
+}
+.order-summary-data{
+    font-weight: bold;
+    text-align: center;
+    margin-top:1.3rem;
+    gap:1rem;
+}
+.veg-nonveg{
+    margin-top:2rem;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.order-incr-dec{
+    margin-inline:auto;
+}
+.order-incr-dec button{
+    border:2px solid black;
+    width:2rem;
+}
+.price-DB{
+    display: flex;
+    text-align: center;   
+}
+.suggestion input{
+    padding:1rem;
+    width:150%;
+}
+.suggestion{
+    margin-top:0.9rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.opt-for-delivery{
+    border:2px solid black;
+    border-radius: 0.5rem;
+    padding:1rem;
+    margin-top:1rem;
+    display: flex;
+    gap:1rem;
+    width:50%;
+}
+
+.bill-container {
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-top: 20px; 
+    width:50%;
+}
+
+.bill-details p, .extra-details p {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 10px 0; 
+}
+
+.total-to-pay {
+    font-weight: bold; 
+    font-size: 1.2em; 
+    color: #ff5722; 
+}
+.savings {
+    color: green; 
+    font-weight: bold;
+}
+.bill-container:hover{
+    border-color: gray;
+    cursor: pointer;
+}
+.paytm img , .GPay img , .UPI img , .FreeCharge img{
+    height:50px;
+    margin-inline: auto;
+    width:auto;
+}
+.paytm,.GPay,.FreeCharge,.UPI{
+    border:2px solid black;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    padding:5px;
+}
+.payment-method{
+    display: flex;
+    flex-direction: column;
+    margin-top:9rem;
+}
+.UPI input{
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 100%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s; 
+}
+.order-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.UPI:hover{
+    border-color: #ff5722;
+}
+
+.UPI input:focus {
+    border-color: #ff5722; 
+    outline: none; 
+}
+.pay-btn button{
+    border-width: 2px;
+    color:black;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.pay-btn:focus , .pay-btn:hover{
+    border-color: #ff5722;
+    cursor: pointer;
+}
+.pay-btn{
+    padding:1rem;
+}
+.payment-method h2{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .check-out-page {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .acc-add-pay {
+        margin-top: 4rem; 
+        width: 100%;
+    }
+    .account, .delivery_addres, .payment {
+        padding: 2rem; 
+        width: 100%;
+    }
+    .bill-container {
+        width: 90%; 
+        padding: 15px;
+    }
+    .pay-btn button {
+        width: 100%;
+        padding: 1rem;
+    }
+    .suggestion input {
+        width: 100%; 
+        max-width: 100%;
+    }
+    .veg-nonveg {
+        flex-direction: column; 
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .account-img img {
+        height: 80px; 
+        width: auto;
+    }
+    .order-summary-data {
+        font-size: medium;
+        text-align: center;
+    }
+    .savings {
+        font-size: small;
+    }
+    .pay-btn button {
+        font-size: large;
+    }
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 1rem; /* Padding for navbar */
+    background-color: #fff; /* Background color */
+}
+
+.navbar ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+    gap: 1rem; /* Space between items */
+}
+
+.navbar ul li {
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .navbar ul {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width */
+        padding: 0; /* Remove padding */
+    }
+    .navbar ul li {
+        width: 100%; /* Full width for each item */
+        text-align: center; /* Center text */
+        padding: 1rem; /* Padding for touch targets */
+        border-bottom: 1px solid #ccc; /* Divider between items */
+    }
+}

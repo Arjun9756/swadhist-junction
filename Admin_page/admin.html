@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <h2>Restaurant Admin</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Header Section -->
+      <header>
+        <h1>Order Management</h1>
+        <div class="profile">
+          <span>Restaurant Name</span>
+        </div>
+      </header>
+  
+      <!-- Orders Table -->
+      <div class="orders">
+        <h2>Current Orders</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer Name</th>
+              <th>Order Details</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>John Doe</td>
+              <td>Pizza, Coke</td>
+              <td>$25.00</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>
+                <button class="action-btn accept">Accept</button>
+                <button class="action-btn reject">Reject</button>
+                <button class="action-btn complete">Complete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Jane Smith</td>
+              <td>Burger, Fries</td>
+              <td>$18.00</td>
+              <td><span class="status accepted">Accepted</span></td>
+              <td>
+                <button class="action-btn reject">Reject</button>
+                <button class="action-btn complete">Complete</button>
+              </td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Home_Page/style.css">
+    <link rel="stylesheet" href="Error_page_Style.css">
+    <link rel="stylesheet" href="../Footer_Section/Footer Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_header">
+            <div class="logo nav_logo">
+                <a href="#">Swadhist <span> Junction</span></a>
+            </div>
+            <ul class="nav_links" id="nav_links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Menu" onclick="change_page()">Menu</a></li>
+                <li><a href="#Clients" onclick="Error_Page()">Clients</a></li>
+                <li><a href="#contact" onclick="Error_Page()">Contact US</a></li>
+            </ul>
+            <div class="nav_menu_btn" id="menu_btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="error_page">
+        <div class="erro_no">
+            <img src="Error Gif/Error img.png">
+            <p>Looks like you've taken a wrong turn! The page you're looking for doesn't exist Don't worry, let's get you back on track.</p>
+            <a href="../Home_Page/index.html" class="btn" id="404">Back to Home</a>
+        </div>
+    </div>
+    <!-- Footer include -->
+    <div id="footer-container"></div>
+    <script src="error.js"></script>
+</body>
+</html>

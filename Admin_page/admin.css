@@ -1,0 +1,139 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #3498db;
+  }
+  
+  /* Main Content Styling */
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #ecf0f1;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .profile {
+    font-weight: bold;
+  }
+  
+  /* Orders Table Styling */
+  .orders {
+    margin-top: 20px;
+  }
+  
+  .orders h2 {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background: #3498db;
+    color: white;
+  }
+  
+  td {
+    background: #f9f9f9;
+  }
+  
+  /* Status Label Styling */
+  .status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+  }
+  
+  .status.pending {
+    background-color: #f39c12;
+  }
+  
+  .status.accepted {
+    background-color: #27ae60;
+  }
+  
+  .status.rejected {
+    background-color: #e74c3c;
+  }
+  
+  .status.completed {
+    background-color: #3498db;
+  }
+  
+  /* Action Button Styling */
+  .action-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .action-btn.accept {
+    background-color: #27ae60;
+  }
+  
+  .action-btn.reject {
+    background-color: #e74c3c;
+  }
+  
+  .action-btn.complete {
+    background-color: #3498db;
+  }
+  

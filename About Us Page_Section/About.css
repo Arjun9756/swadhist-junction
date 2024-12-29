@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about_us
+{
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fc7f09;
+    text-align: center;
+    position: relative;
+    padding:20px;
+}
+
+.about_content{
+    max-width: 1200px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about_junction h1{
+    font-size: 3rem;
+    color:#ffffff;
+    font-weight: bold;
+}
+.about_junction p{
+    margin-top: 1rem;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.vision_box{
+    margin-top:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision_list ul
+{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+}
+.vision_list li , b{
+    margin-inline: auto;
+}
+.vision_list button{
+    height: 29px;
+    padding:2rem;
+    width:100%;
+    border-radius: 22px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    color:#fc7f09;
+    box-shadow: 10px 4px 6px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+.vision_list button:hover{
+    transform: scale(0.95);
+    cursor:pointer;
+    color:#ffffff;
+    background-color: #fc7f09;
+}
+
+.delivery_man , .industry_pioneer{
+    margin:1rem auto;
+    padding:0.2rem;
+    margin-right:2rem;
+    gap:2rem;
+    display: flex;
+}
+
+.delivery_man_img , .industry_pioneer_img
+{
+    margin-left: 2rem;
+    height:400px;
+    width:auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.delivery_man img , .industry_pioneer_img{
+    height: 500px;
+    width: auto; 
+    background-color: white;
+    border-radius: 5rem;
+    box-shadow: 2px 10px 75px rgba(255, 0, 0, 0.5); 
+    transition: transform 0.3s ease; 
+}
+.content{
+    margin-top: 8rem;
+    flex: 1;;
+}
+
+.content h2
+{
+    color:black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 2px;
+}
+.content p{
+    color:rgba(29, 26, 26, 0.712);
+    font-family: "Roboto Slab", serif;
+}
+
+.delivery_man_img , .industry_pioneer_img{
+    flex:1;
+}
+.wealth{
+    background-color: #f8f9fa;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+}
+.SJwealth h3{
+    display: inline-block;
+    margin: 10px;
+    font-size:2rem;
+    color:green
+}
+.SJwealth span{
+    color:#999;
+}
+
+.team_member{
+    margin-top:2rem;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width:100%;
+    padding:2rem;
+    justify-content: center;
+    margin-inline: auto;
+    padding:5px;
+    align-items: center;
+}
+.img_section img{
+    height:200px;
+    margin-bottom: 15px;
+    border-radius: 5rem;
+    border-radius: 8px;
+    width: auto;
+}
+.img_section{
+    align-items: center;
+    margin-left:2rem;
+    display: flex;
+}
+.img_sync_name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.company_order{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.img_sync_text p{
+    font-size: 1rem;
+    color:#000000;
+    max-width: 600px;
+    margin-top:10px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .about_content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .delivery_man, .industry_pioneer {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .delivery_man_img, .industry_pioneer_img {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .content {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_junction h1 {
+        font-size: 2rem;
+    }
+
+    .about_junction p {
+        font-size: 1rem;
+    }
+    .vision_list li{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .vision_list ul {
+        gap: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vision_list button {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .delivery_man img, .industry_pioneer_img {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .team_member {
+        flex-direction: column;
+    }
+
+    .team_data {
+        width: 100%;
+    }
+
+    .img_section {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about_us {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .SJwealth h3 {
+        font-size: 1.5rem;
+    }
+}
+.vision-head
+{
+    padding:0.3rem;
+    margin-inline:auto;
+    max-width: 90%;
+    margin-top:2rem;
+    align-items: center;
+    text-align: center;
+}
+.vision-head h2 , .vision-head p{
+    color: black;
+    font-weight: bold;
+    gap:1rem;
+    justify-content:space-evenly;
+    text-align: center;
+}
+.vision-head p{
+    margin-top:2rem;
+}
+.vision-head h2{
+    font-size: 3rem;
+    color:#fc7f09
+}
+.vision-focus{
+    display: flex;
+    gap:1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.focus-item{
+    text-align: center;
+    width:200px;
+    border:2px solid black;
+    padding:1rem;
+    border-radius:1rem;
+    transition: transform 0.3s ease; 
+}
+.focus-item img{
+    width:100px;
+    border-radius: 50%;
+    height: 104px;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 1rem;
+}
+.focus-item p{
+    color:black;
+    padding: 2px;
+    gap:1rem;
+}
+.vision-timeline{
+    display: flex;
+    margin-top:3rem;
+    justify-content: space-evenly;
+    margin-inline: auto;
+    gap:10rem;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: center;
+
+}
+.milestone {
+    text-align: center;
+    border:2px solid black;
+    padding:1rem;
+    border-radius: 1rem;
+    width:300px;
+    transition: transform 0.3s ease;
+}
+.milestone h2 {
+    font-size: 1.5rem;
+}
+
+.milestone h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.focus-item:hover{
+    background-color: #999;
+    transform: scale(1.05);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.about_junction span{
+    color:black;
+}
+.expectation{
+    top:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+}

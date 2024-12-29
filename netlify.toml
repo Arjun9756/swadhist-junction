@@ -1,0 +1,13 @@
+[build]
+  publish = "/"
+  command = "# no build command needed"
+
+[[redirects]]
+  from = "/*"
+  to = "./pages/Loader_Front_Page/Loader.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate" 

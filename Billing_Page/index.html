@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway SWJ</title>
+    <link rel="stylesheet" href="../Footer_Section/Footer Style.css">
+    <link rel="stylesheet" href="../Home_Page/style.css">
+    <link rel="stylesheet" href="billing.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav_header"">
+            <div class=" logo nav_logo">
+            <a href="#">Swadhist<span>Junction</span></a>
+        </div>
+        <ul class="nav_links" id="nav_links">
+            <li><a href="../Home_Page/index.html">Home</a></li>
+            <li><a href="../Menu_Section/index2.html" onclick="change_page()">Menu</a></li>
+            <li><a href="../Erro_Page/index.html" onclick="Error_Page()">Clients</a></li>
+            <li><a href="../Erro_Page/index.html" onclick="Error_Page()">Contact US</a></li>
+        </ul>
+        <div class="nav_menu_btn" id="menu_btn">
+            <p><i class="ri-menu-line"></i></p>
+        </div>
+        </div>
+    </nav>
+    <div class="check-out-page">
+        <div class="acc-add-pay">
+            <div class="account">
+                <h2 style="color:black; font-weight: bold;">Account</h2>
+                <p>To place your order now, log in to your existing account or sign up.</p>
+                <div class="account-img">
+                    <img src="Image/Image-login_.avif">
+                </div>
+            </div>
+            <div class="delivery_addres">
+                <h2 style="color:black; font-weight: bold;">Deliver Address</h2>
+                <p>Your Address is Saved for your next order see you soon!</p>
+            </div>
+            <div class="payment">
+                <h2>Payment</h2>
+                <p>Payment Must Be Recived and should Realisedon the SWJ A/C</p>
+            </div>
+        </div>
+        <div class="orders-detail-main">
+            <div class="order-detail">
+                <div class="order-summary">
+                    <div class="order-img">
+                        <img src="Image/order-sumary-img.avif">
+                    </div>
+                    <div class="order-summary-data">
+                        <span>Rominus Pizza And Burger</span>
+                        <p>Laxmi Nagar</p>
+                    </div>
+                </div>
+                <div class="veg-nonveg">
+                    <span style="font-weight: bold;">Garlic Bread Sticks</span>
+                    <div class="order-incr-dec">
+                        <button class="neg">-</button>
+                        <span>1</span>
+                        <button class="pos">+</button>
+                    </div>
+                    <h2 class="price-DB" style="color:black;">59</h2>
+                </div>
+                <div class="suggestion">
+                    <input type="text" placeholder="Any suggestions? We will pass it on...">
+                </div>
+                <div class="opt-for-delivery">
+                    <div class="check">
+                        <input type="checkbox">
+                    </div>
+                    <div class="diclaimer">
+                        <h3>Opt in for No-contact Delivery</h3>
+                        <span>Unwell, or avoiding contact? Please select no-contact delivery. Partner will safely place
+                            the order outside your door (not for COD)</span>
+                    </div>
+                </div>
+                <div class="bill-container">
+                    <h2>Bill Details</h2>
+                    <div class="bill-details">
+                        <p>Item Total <span class="strike-thorugh" style="text-decoration: line-through;">₹
+                                109</span><span class="price">₹ 59</span></p>
+                        <p>Delivery Fee | 227.2 kms <span class="price">₹20</span></p>
+                        <p>Extra discount for you <span class="price">-₹35</span></p>
+                    </div>
+                    <div class="extra-details"> 
+                        <p>Delivery Tip <a href="#" class="add-tip">Add tip</a></p>
+                        <p>Platform fee <span class="price">₹7</span></p>
+                        <p>GST and Restaurant Charges <span class="price">₹30.46</span></p>
+                    </div>
+                    <div class="total-to-pay">
+                        <p>TO PAY <span class="total-price">₹81</span></p>
+                    </div>
+                    <div class="savings">
+                        <p>Savings of ₹85</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment-container">
+            <div class="payment-method">
+                <h2>Payment Method</h2>
+                <div class="paytm">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVUlEQVR4nO2WT2sTQRTAn39Aa3cqLWgRwZNHP4OF0swE2mtP6ueoFwnevKoglCqdieAhztSrNz+EIvWiFMS02plGbGyb1kRms5udnewmEdlA4f1gCHk7u/N+M292FgBBEARBEARBEGTcKHMHpP4Cpw6lb4HST0Hqdtj+l4DxLcJEx20B4/uEio2JRX7d6bfr9fkcUF6B5dq56Pqvblw0nHu6MSqaYUCabVCm09ek+RnJfY9iDVB6BZTZCmPSrEGtcROk3gClNSjzAV6bu/Eg+75AL0nK38bJECYOsvuI+9H1Xsy5Jx2TppkpoEz3et61UFK3M8TvgZ2dPAHCRAvm1i+GyVD+LUfy08gCytQHr4Dp/GPbtIn9dgeZLFWvphIsv7jilx1h64u9PlQcjiwQ4898TFrqdthSCe/Ng9otJf91K1Ua3ad0zrgDz5aqk1B+fCFg/Amh/Ef/KvB2IQIxbunEJAInYGcwtQLzr2ZTyVUqZwkTj/LLrF9gpvxyCpZrE4ULSH1sS+goNzkq6mFyVHwdKkBFfcBeKlCAidaAgZ9lze70wuplX8C+UscuoMI9wI/7zwGxRyh/fm1p9ZIvED/DF7ClFlC+Ys+HMQoc2RI6yRzEwd3odvazVsBnekHccM6KZoEC4s9wAb49bA9YAspNTp/3hQhIfWiTaw8TCCivjiLgvtG8knxQzAqYAwiY0HHd5wlM0bUZwvgb99BL3lS8lgg450Qowz8Sxh/C3LvzqQfak9c9gWOk3olmdieJRd9P9tfvZ7+VEARBEARBEARB4JTyF2J2zO+85cc7AAAAAElFTkSuQmCC">
+                    <span>PayTm Karo</span>
+                    <input type="radio" name="Pay">
+                </div>
+                <div class="GPay">
+                    <img
+                        src="data:image/png;base64,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">
+                    <span>GPay Karo</span>
+                    <input type="radio" name="Pay">
+                </div>
+                <div class="FreeCharge" </div>
+                    <img src="Image/Freecharge app.jpg" alt="FreeCharge">
+                    <span>PayTm Karo</span>
+                    <input type="radio" name="Pay">
+                </div>
+                <div class="UPI">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD00lEQVR4nO1YaYiOURR+xjL2EEJNsqSYYSSyhUFqbFmKLA1K4c9YBqWUXdllyTKjxlZ++KOxlWwJM5Gy5Y8YM5gaS2bsxsxXOnout9P3fu99TVnqPnV6v+fMOXd533POvWcADw8PDw8PDw+PP4E2AC4D+AYgVgt5D2APgKTfHL8SwA4AdULWOwnAUwAlAMbZf9hYyw1oyVATb4roPz/BJuaoFyIb+ombVA6HO1oBeKcWfoU8U9neo34o+V3yiYof5fMlgJZx5lwIoIayj7Zl5o9NAVQB+AqgSYSNtOeAVRxD5At58zh2sulki8tbbRGHX+QCd6n5VlBfzS82m/yUMRhJRSF5r5DPvo52WeTXyUeH+J1RfjcCeCpfqmwsnbo1tJGXNIu6fOqWm42spWIL+ZKQBZnwOE6+knx7iN9i2h1WL0RzwU7qLrF4yO+PAMbiF56o9fwwFsV4uGMMP7H49UA0PFcL0BzMj3LrJVSoAtKRegnlRmDMfmCMSvK6YisHehGn1CZCKv1MvmjeHkBP2s61Er8vdSP4nK3SAQOouE8+zDE8lllVxo7zIDliVR07XzTPAnCev+UsKeBmzZy7VX5sg1rQfvINIQsyYXSKPFvFeZDMVH6LAvhhcikcBklWBEhhsvNDDsYfKKBiOtxRjzErfmnUlSqu7VLi+CUa5yGA+gDqAjhI3VuGn8kPkXZmsjIqOjhuQgZeQJ9Svq20gHwZosJ2iLLTPE19xaUMOcOlStr58cheWHFISPzLkmtvJPM/3Ew1D08J14Q4S4cZ5MdUYofZydMVElJ7rUV2ZbV6SW7ubif5lMPRCcms6TWs6UmMYRmkm6OduUK44hD9isn7kL8B0I/63tSVswiEIoMOd8jTyZ852kWRFFWpcsmXk58gz+HzPvWjXDayXh00OeT5jnau8oB+3S3dFOoukM8jlzJt337NIZwQhWrXOg/C7OSyFwXZVgK35r3pE3VdlG1nhvLrsEFb8Or8mX1JMltXcW6rLnTfeGETuwa0i+m2MwSdeBaI3y3VUjyOYz9XN1JBmERD6a3tPAgSbSc9RDMmY2XEUJNWW7CZ/AC5Seyx7EXs604gTBmUWLTzIEi03VXywY6Lr7B6b3OrvU0+GcBAjtWfN3TRr4IDTF8tJS8KitQkqx3zpQ1zQxqmhhYXGcRKmW71JXmuCzJl0LSXYZCDaxpzKMbJBdcc82UC7cy1fSp5CXPknpVDp63qFYqwq3gU+cB8SYSwHj9GKYr4TxE05ud7VctNlLNBcrlJ51nxH1MiyX2OIefh4eHh4eHh4YG/g+9mGYdLU+R42gAAAABJRU5ErkJggg==">
+                    <input type="text" placeholder="Enter Your UPI" name="PayTm">
+                </div>
+                <div class="pay-btn">
+                    <button>PayNow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+    <script src="billing.js"></script>
+</body>
+
+</html>
